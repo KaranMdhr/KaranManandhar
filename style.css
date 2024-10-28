@@ -25,8 +25,14 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 10;
+    background-color: #080808;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    padding: 10px ;
+    justify-items: space-between;
 }
 .logo{
     width: 140px;
@@ -334,9 +340,14 @@ nav .fas{
     .header-text h1{
         font-size: 30px;
     }
+    nav{
+        justify-content: space-between;
+    }
     nav .fas{
         display: block;
         font-size: 25px;
+        position: relative;
+        right: 0px;
     }
     nav ul{
         background: #ff004f;
